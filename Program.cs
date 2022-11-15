@@ -7,6 +7,8 @@ string stringaConnessione = "Data Source=localhost;Initial Catalog=biblioteca-db
 
 SqlConnection connessioneSql = new SqlConnection(stringaConnessione);
 
+
+//INSERT
 //try
 //{
 //    connessioneSql.Open();
@@ -49,6 +51,80 @@ SqlConnection connessioneSql = new SqlConnection(stringaConnessione);
 //}
 
 
+//UPDATE
+
+//try
+//{
+//    connessioneSql.Open();
+
+//    Console.WriteLine("inserisci il titolo del documento:");
+//    string titolo = Console.ReadLine();
+
+//    Console.WriteLine("il documento è disponibile? (si/no)");
+//    string input = Console.ReadLine();
+//    bool stato = true;
+//    switch (input)
+//    {
+//        case "si":
+//            stato = true;
+//            break;
+//        case "no":
+//            stato = false;
+//            break;
+//    }
+//    string query = "UPDATE documenti SET stato=@stato where titolo=@titolo";
+    
+//    // creo il comando ed eseguo la query
+//    SqlCommand cmd = new SqlCommand(query, connessioneSql);
+//    cmd.Parameters.Add(new SqlParameter("@stato", stato));
+//    cmd.Parameters.Add(new SqlParameter("@titolo", titolo));
+
+
+//    int affectedRows = cmd.ExecuteNonQuery();
+
+
+//}
+//catch (Exception ex)
+//{
+//    Console.WriteLine(ex.Message);
+//}
+//finally
+//{
+//    connessioneSql.Close();
+//}
+
+
+//DELETE
+
+//try
+//{
+//    connessioneSql.Open();
+
+//    Console.WriteLine("inserisci il titolo del documento:");
+//    string titolo = Console.ReadLine();
+
+//    string query = "DELETE FROM documenti where titolo=@titolo";
+
+//    // creo il comando ed eseguo la query
+//    SqlCommand cmd = new SqlCommand(query, connessioneSql);
+//    cmd.Parameters.Add(new SqlParameter("@titolo", titolo));
+
+
+//    int affectedRows = cmd.ExecuteNonQuery();
+
+
+//}
+//catch (Exception ex)
+//{
+//    Console.WriteLine(ex.Message);
+//}
+//finally
+//{
+//    connessioneSql.Close();
+//}
+
+
+//RICERCA
 try
 {
     connessioneSql.Open();
